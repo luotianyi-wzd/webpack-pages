@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>page3</title>
+    <script type="text/javascript">
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var cliWidth = html.clientWidth;
+                if (cliWidth > 768) {
+                    html.style.fontSize = 16 + 'px'
+                } else {
+                    html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+                }
+            }
+            win.addEventListener('resize', setFont, false)
+            doc.addEventListener('DOMContentLoaded', setFont, false)
+        })(window, document);
+    </script>
+    <link rel="stylesheet" href="./cooperation.css">
+</head>
+<body>
+<div id="app" class="app">
+    <h1>Page3</h1>
+</div>
+<script type="text/javascript" src="./js/page3.js"></script></body>
+</html>

@@ -1,0 +1,1 @@
+import './agree.less'
